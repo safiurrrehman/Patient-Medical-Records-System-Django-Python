@@ -1,0 +1,8 @@
+<html>
+<h1> search patient info</h1>
+<form method='post' action="result">
+ {% csrf_token %}
+<input type='text' name='srch' placeholder='enter patient id'  >
+<button type=submit >search</button>
+</form>
+</html>

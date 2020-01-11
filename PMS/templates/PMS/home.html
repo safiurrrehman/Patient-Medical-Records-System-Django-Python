@@ -1,0 +1,44 @@
+
+<html>
+<head>
+<title>
+ Medvil Cares
+</title>
+</head>
+<body>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font face="Algerian" size=8 color="#104E8B"> <big><big>Medwill Cares</big></big></font>
+
+
+<br>
+<div style="background-color:#104E8B;text-align:left"><font face="Cambiri" size=4 color="white"><marquee>
+Welcome to Medwill Cares. We strive 24-7 for the survival of our people. Feel free to ask for help.
+</marquee></font></div>
+<br><br>
+<br><br>
+
+<form action="report" method="POST">
+    {% csrf_token %}
+<tr align="right">
+<td><b>
+Email </b> &nbsp&nbsp&nbsp
+<input type="text" name="username">
+</tr>
+
+
+<tr align="right">
+<td>
+<br><br><b>
+Password</b> &nbsp&nbsp&nbsp
+<input type="text" name="id">
+</tr>
+
+    <button type="submit">Login</button>
+
+<br>
+<a href="{% url 'home' %}">Login As Admin?
+</a>
+    </form>
+</body>
+</html>

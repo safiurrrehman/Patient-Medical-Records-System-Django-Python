@@ -1,0 +1,148 @@
+
+<html>
+<head>
+<title>
+Courses
+</title>
+</head>
+<body>
+<h1>
+Patient Medical Records
+</h1>
+
+<form name="Medical Records" method="POST" action="register">
+ {% csrf_token %}
+<table >
+
+<tr align="left">
+<td><b>
+ FIRST NAME </b> &nbsp&nbsp&nbsp
+<input tye="text" name='pat_name'>
+</tr>
+
+<tr align="left">
+<td><b>
+<br><br>
+LAST NAME </b> &nbsp&nbsp&nbsp
+<input tye="text" name='l_name'>
+</tr>
+&nbsp&nbsp&nbsp
+
+<tr align="left">
+<td>
+<br><br><b>
+ AGE</b> &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp
+<input tye="text" name='age'>
+</tr>
+
+<tr align="left">
+<td>
+<br><br>
+
+<b>GENDER</b>  &nbsp&nbsp&nbsp
+<select name='gen'>
+<input type="checkbox" name="M" value="Male">Male
+&nbsp&nbsp&nbsp
+<input type="checkbox" name="F" value="Female">Female
+&nbsp&nbsp&nbsp
+<input type="checkbox" name="O" value="Other">Other
+
+</tr>
+
+<tr align="left">
+<td><b>
+<br><br>
+ADDRESS </b> &nbsp&nbsp&nbsp &nbsp&nbsp
+<input tye="text" name="address">
+</tr>
+
+<tr>
+<td align="left">
+<br><br><br><b>
+
+PHONE NUMBER </b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <select name="code">
+<option value="Country Code">Country Code
+<option>+92
+<option>+93
+<option>+96
+
+<input type="numeric" name="number" >
+</select>
+</tr>
+
+
+<tr align="left">
+<td>
+<br><br><b>
+DISEASE</b> &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp
+
+<select name="dis" >
+<option value="Disease">Disease
+<option value="Tuberculosis">Tuberculosis
+<option value="Cancer">Cancer
+<option value="Celiac Disease">Celiac Disease
+<option value="Heart Disease">Heart Disease
+<option value="Infectious Disease">Infectious Disease
+<option value="Liver Disease">Liver Disease
+<option value="Allergies">Allergies
+<option value="Asthma">Asthma
+<option value="Diabetes">Diabetes
+<option value="Sclerosis">Sclerosis
+
+
+
+
+
+</select>
+
+</tr>
+
+<tr align="left">
+<td>
+<br><br><b>
+MEDICAL HISTORY </b> &nbsp&nbsp&nbsp
+
+<select name="hist" >
+<option value="History">History
+<option value="Normal">Normal
+<option value="Physical Disability">Physical Disability
+<option value="Mental Disability">Mental Disability
+<option value="Health Issues">Health Issues
+</select>
+</tr>
+
+<tr align="left">
+<td><b>
+<br><br>
+DOCTOR </b> &nbsp&nbsp&nbsp &nbsp&nbsp
+<input type="text" name='doc_name'>
+</tr>
+
+
+
+
+
+
+<tr align="left">
+<td>
+<br><br>
+
+<b>GENDER</b>  &nbsp&nbsp&nbsp
+<select name='gend'>
+<input type="checkbox" value="Male">Male
+&nbsp&nbsp&nbsp
+<input type="checkbox" value="Female">Female
+&nbsp&nbsp&nbsp
+<input type="checkbox" value="Other">Other
+
+</tr>
+<tr align="left">
+<td>
+<br><br>
+<input type="Submit">
+</tr>
+<input type="FILE">
+</table>
+</form>
+</body>
+</html>
